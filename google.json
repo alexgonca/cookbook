@@ -1,0 +1,274 @@
+{
+  "_id": "google",
+  "selectors": [
+    {
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "type": "SelectorElement",
+      "multiple": true,
+      "id": "result",
+      "selector": "div.rc",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "result"
+      ],
+      "type": "SelectorText",
+      "multiple": false,
+      "id": "headline",
+      "selector": "h3.r a",
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "result"
+      ],
+      "type": "SelectorElementAttribute",
+      "multiple": false,
+      "id": "URL",
+      "selector": "h3.r a",
+      "extractAttribute": "href",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "result"
+      ],
+      "type": "SelectorText",
+      "multiple": false,
+      "id": "date",
+      "selector": "span.f, div.slp.f",
+      "regex": ".+?((?= -)|$)",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "result"
+      ],
+      "type": "SelectorText",
+      "multiple": false,
+      "id": "blurb",
+      "selector": "span.st",
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "result"
+      ],
+      "type": "SelectorHTML",
+      "multiple": false,
+      "id": "blurb_html",
+      "selector": "span.st",
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "result"
+      ],
+      "type": "SelectorText",
+      "multiple": false,
+      "id": "missing",
+      "selector": "div._Tib",
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "result"
+      ],
+      "type": "SelectorHTML",
+      "multiple": false,
+      "id": "rank",
+      "selector": "h3.r",
+      "regex": "(?:')([0-9]+)(?:')",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "type": "SelectorText",
+      "multiple": false,
+      "id": "current_page",
+      "selector": "td.cur",
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "type": "SelectorText",
+      "multiple": false,
+      "id": "last_page",
+      "selector": "td:eq(-2)",
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "type": "SelectorElementAttribute",
+      "multiple": false,
+      "id": "search_term",
+      "selector": "input[name='q']",
+      "extractAttribute": "value",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "type": "SelectorElementAttribute",
+      "multiple": false,
+      "id": "language_results",
+      "selector": "input[name='lr']",
+      "extractAttribute": "value",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "type": "SelectorElementAttribute",
+      "multiple": false,
+      "id": "country",
+      "selector": "input[name='cr']",
+      "extractAttribute": "value",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "type": "SelectorHTML",
+      "multiple": false,
+      "id": "initial_date",
+      "selector": "#tophf",
+      "regex": "cd_min:[0-9]+\\/[0-9]+\\/[0-9]+",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "type": "SelectorHTML",
+      "multiple": false,
+      "id": "final_date",
+      "selector": "#tophf",
+      "regex": "cd_max:[0-9]+\\/[0-9]+\\/[0-9]+",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "type": "SelectorHTML",
+      "multiple": false,
+      "id": "location",
+      "selector": "#xjsi",
+      "regex": "\\[(-|)[0-9]+\\.[0-9]+,(-|)[0-9]+\\.[0-9]+\\]",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "type": "SelectorHTML",
+      "multiple": false,
+      "id": "timestamp",
+      "selector": "#xjsi",
+      "regex": "\\d{10}(?=\\\\\",null)",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "type": "SelectorElementAttribute",
+      "multiple": false,
+      "id": "num_results",
+      "selector": "input[name='num']",
+      "extractAttribute": "value",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "type": "SelectorElementAttribute",
+      "multiple": false,
+      "id": "language_interface",
+      "selector": "input[name='hl']",
+      "extractAttribute": "value",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "type": "SelectorHTML",
+      "multiple": false,
+      "id": "sorted_by_date",
+      "selector": "#tophf",
+      "regex": "sbd:1",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "type": "SelectorText",
+      "multiple": false,
+      "id": "user",
+      "selector": "div.gb_Db",
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "type": "SelectorElementAttribute",
+      "multiple": false,
+      "id": "blocked_page",
+      "selector": "input[name='continue']",
+      "extractAttribute": "value",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "type": "SelectorLink",
+      "multiple": false,
+      "id": "pagination_link",
+      "selector": "a#pnnext.pn",
+      "delay": ""
+    }
+  ],
+  "startUrl": [
+  ]
+}

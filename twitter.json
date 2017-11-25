@@ -1,0 +1,195 @@
+{
+  "_id": "twitter",
+  "selectors": [
+    {
+      "parentSelectors": [
+        "_root"
+      ],
+      "type": "SelectorElementScroll",
+      "multiple": true,
+      "id": "tweet",
+      "selector": "li.js-stream-item div.tweet",
+      "delay": "10000"
+    },
+    {
+      "parentSelectors": [
+        "tweet"
+      ],
+      "type": "SelectorElementAttribute",
+      "multiple": false,
+      "id": "tweet-id",
+      "selector": "_parent_",
+      "extractAttribute": "data-tweet-id",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "tweet"
+      ],
+      "type": "SelectorText",
+      "multiple": false,
+      "id": "text",
+      "selector": "p.TweetTextSize",
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "tweet"
+      ],
+      "type": "SelectorText",
+      "multiple": false,
+      "id": "date",
+      "selector": "span._timestamp",
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "tweet"
+      ],
+      "type": "SelectorText",
+      "multiple": false,
+      "id": "retweets",
+      "selector": "div.ProfileTweet-action.ProfileTweet-action--retweet button.ProfileTweet-actionButton span.ProfileTweet-actionCountForPresentation",
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "tweet"
+      ],
+      "type": "SelectorText",
+      "multiple": false,
+      "id": "handle",
+      "selector": "a.account-group span.username",
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "tweet"
+      ],
+      "type": "SelectorElementAttribute",
+      "multiple": false,
+      "id": "time",
+      "selector": "span._timestamp",
+      "extractAttribute": "data-time",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root"
+      ],
+      "type": "SelectorText",
+      "multiple": false,
+      "id": "filter",
+      "selector": "li.AdaptiveFiltersBar-item.is-selected a.AdaptiveFiltersBar-target",
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root"
+      ],
+      "type": "SelectorText",
+      "multiple": false,
+      "id": "search_terms",
+      "selector": "h1.SearchNavigation-titleText",
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root"
+      ],
+      "type": "SelectorText",
+      "multiple": false,
+      "id": "since",
+      "selector": "h1.SearchNavigation-titleText",
+      "regex": "since:.*(?= )",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root"
+      ],
+      "type": "SelectorText",
+      "multiple": false,
+      "id": "until",
+      "selector": "h1.SearchNavigation-titleText",
+      "regex": "until:.*",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root"
+      ],
+      "type": "SelectorText",
+      "multiple": false,
+      "id": "language",
+      "selector": "div.SidebarFilterModule-filters:nth-of-type(4) select.t1-select :selected",
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root"
+      ],
+      "type": "SelectorText",
+      "multiple": false,
+      "id": "location",
+      "selector": "div.SidebarFilterModule-filters:nth-of-type(3) select.t1-select :selected",
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root"
+      ],
+      "type": "SelectorText",
+      "multiple": false,
+      "id": "social",
+      "selector": "div.SidebarFilterModule-filters:nth-of-type(2) select.t1-select :selected",
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root"
+      ],
+      "type": "SelectorHTML",
+      "multiple": false,
+      "id": "request_start_time",
+      "selector": "#ttft_boot_data",
+      "regex": "[0-9]{13}",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "_root"
+      ],
+      "type": "SelectorElementAttribute",
+      "multiple": false,
+      "id": "username",
+      "selector": "a.DashUserDropdown-userInfoLink",
+      "extractAttribute": "href",
+      "delay": ""
+    },
+    {
+      "parentSelectors": [
+        "tweet"
+      ],
+      "type": "SelectorText",
+      "multiple": false,
+      "id": "replyto",
+      "selector": "div.ReplyingToContextBelowAuthor",
+      "regex": "",
+      "delay": ""
+    }
+  ],
+  "startUrl": [
+    "https://twitter.com/search?f=tweets&vertical=default&q=%23PanamaPapers%20since%3A2016-03-01%20until%3A1499342461&l=en&src=typd",
+    "https://twitter.com/search?f=tweets&q=%23search_control_void&src=typd"
+  ]
+}

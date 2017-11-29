@@ -9,7 +9,7 @@
       "multiple": true,
       "id": "tweet",
       "selector": "li.js-stream-item div.tweet",
-      "delay": "10000"
+      "delay": "2000"
     },
     {
       "parentSelectors": [
@@ -189,7 +189,6 @@
     }
   ],
   "startUrl": [
-    "https://twitter.com/search?f=tweets&vertical=default&q=%23PanamaPapers%20since%3A2016-03-01%20until%3A1499342461&l=en&src=typd",
-    "https://twitter.com/search?f=tweets&q=%23search_control_void&src=typd"
+    "https://twitter.com/search?f=tweets&vertical=default&q=%23PanamaPapers%20since%3A2016-03-01%20until%3A1499342461&l=en&src=typd"
   ]
 }

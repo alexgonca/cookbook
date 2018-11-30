@@ -1,273 +1,275 @@
 {
-  "_id": "google",
+  "_id": "google_search",
+  "startUrl": [
+    "https://www.google.com/"
+  ],
   "selectors": [
     {
+      "id": "result",
+      "type": "SelectorElement",
       "parentSelectors": [
         "_root",
         "pagination_link"
       ],
-      "type": "SelectorElement",
-      "multiple": true,
-      "id": "result",
       "selector": "div.rc",
+      "multiple": true,
       "delay": ""
     },
     {
+      "id": "headline",
+      "type": "SelectorText",
       "parentSelectors": [
         "result"
       ],
-      "type": "SelectorText",
+      "selector": "div.r > a",
       "multiple": false,
-      "id": "headline",
-      "selector": "h3.r a",
       "regex": "",
       "delay": ""
     },
     {
+      "id": "URL",
+      "type": "SelectorElementAttribute",
       "parentSelectors": [
         "result"
       ],
-      "type": "SelectorElementAttribute",
+      "selector": "div.r > a",
       "multiple": false,
-      "id": "URL",
-      "selector": "h3.r a",
       "extractAttribute": "href",
       "delay": ""
     },
     {
+      "id": "date",
+      "type": "SelectorText",
       "parentSelectors": [
         "result"
       ],
-      "type": "SelectorText",
-      "multiple": false,
-      "id": "date",
       "selector": "span.f, div.slp.f",
+      "multiple": false,
       "regex": ".+?((?= -)|$)",
       "delay": ""
     },
     {
-      "parentSelectors": [
-        "result"
-      ],
-      "type": "SelectorText",
-      "multiple": false,
       "id": "blurb",
-      "selector": "span.st",
-      "regex": "",
-      "delay": ""
-    },
-    {
-      "parentSelectors": [
-        "result"
-      ],
-      "type": "SelectorHTML",
-      "multiple": false,
-      "id": "blurb_html",
-      "selector": "span.st",
-      "regex": "",
-      "delay": ""
-    },
-    {
-      "parentSelectors": [
-        "result"
-      ],
       "type": "SelectorText",
+      "parentSelectors": [
+        "result"
+      ],
+      "selector": "span.st",
       "multiple": false,
-      "id": "missing",
-      "selector": "div._Tib",
       "regex": "",
       "delay": ""
     },
     {
+      "id": "blurb_html",
+      "type": "SelectorHTML",
       "parentSelectors": [
         "result"
       ],
-      "type": "SelectorHTML",
+      "selector": "span.st",
       "multiple": false,
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "id": "missing",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "result"
+      ],
+      "selector": "div._Tib",
+      "multiple": false,
+      "regex": "",
+      "delay": ""
+    },
+    {
       "id": "rank",
+      "type": "SelectorHTML",
+      "parentSelectors": [
+        "result"
+      ],
       "selector": "h3.r",
+      "multiple": false,
       "regex": "(?:')([0-9]+)(?:')",
       "delay": ""
     },
     {
-      "parentSelectors": [
-        "_root",
-        "pagination_link"
-      ],
-      "type": "SelectorText",
-      "multiple": false,
       "id": "current_page",
-      "selector": "td.cur",
-      "regex": "",
-      "delay": ""
-    },
-    {
-      "parentSelectors": [
-        "_root",
-        "pagination_link"
-      ],
       "type": "SelectorText",
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "selector": "td.cur",
       "multiple": false,
-      "id": "last_page",
-      "selector": "td:eq(-2)",
       "regex": "",
       "delay": ""
     },
     {
+      "id": "last_page",
+      "type": "SelectorText",
       "parentSelectors": [
         "_root",
         "pagination_link"
       ],
-      "type": "SelectorElementAttribute",
+      "selector": "td:eq(-2)",
       "multiple": false,
+      "regex": "",
+      "delay": ""
+    },
+    {
       "id": "search_term",
+      "type": "SelectorElementAttribute",
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
       "selector": "input[name='q']",
+      "multiple": false,
       "extractAttribute": "value",
       "delay": ""
     },
     {
-      "parentSelectors": [
-        "_root",
-        "pagination_link"
-      ],
-      "type": "SelectorElementAttribute",
-      "multiple": false,
       "id": "language_results",
-      "selector": "input[name='lr']",
-      "extractAttribute": "value",
-      "delay": ""
-    },
-    {
-      "parentSelectors": [
-        "_root",
-        "pagination_link"
-      ],
       "type": "SelectorElementAttribute",
-      "multiple": false,
-      "id": "country",
-      "selector": "input[name='cr']",
-      "extractAttribute": "value",
-      "delay": ""
-    },
-    {
       "parentSelectors": [
         "_root",
         "pagination_link"
       ],
-      "type": "SelectorHTML",
+      "selector": "input[name='lr']",
       "multiple": false,
+      "extractAttribute": "value",
+      "delay": ""
+    },
+    {
+      "id": "country",
+      "type": "SelectorElementAttribute",
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "selector": "input[name='cr']",
+      "multiple": false,
+      "extractAttribute": "value",
+      "delay": ""
+    },
+    {
       "id": "initial_date",
+      "type": "SelectorHTML",
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
       "selector": "#tophf",
+      "multiple": false,
       "regex": "cd_min:[0-9]+\\/[0-9]+\\/[0-9]+",
       "delay": ""
     },
     {
+      "id": "final_date",
+      "type": "SelectorHTML",
       "parentSelectors": [
         "_root",
         "pagination_link"
       ],
-      "type": "SelectorHTML",
-      "multiple": false,
-      "id": "final_date",
       "selector": "#tophf",
+      "multiple": false,
       "regex": "cd_max:[0-9]+\\/[0-9]+\\/[0-9]+",
       "delay": ""
     },
     {
+      "id": "location",
+      "type": "SelectorHTML",
       "parentSelectors": [
         "_root",
         "pagination_link"
       ],
-      "type": "SelectorHTML",
-      "multiple": false,
-      "id": "location",
       "selector": "#xjsi",
+      "multiple": false,
       "regex": "\\[(-|)[0-9]+\\.[0-9]+,(-|)[0-9]+\\.[0-9]+\\]",
       "delay": ""
     },
     {
+      "id": "timestamp",
+      "type": "SelectorHTML",
       "parentSelectors": [
         "_root",
         "pagination_link"
       ],
-      "type": "SelectorHTML",
-      "multiple": false,
-      "id": "timestamp",
       "selector": "#xjsi",
+      "multiple": false,
       "regex": "\\d{10}(?=\\\\\",null)",
       "delay": ""
     },
     {
-      "parentSelectors": [
-        "_root",
-        "pagination_link"
-      ],
-      "type": "SelectorElementAttribute",
-      "multiple": false,
       "id": "num_results",
-      "selector": "input[name='num']",
-      "extractAttribute": "value",
-      "delay": ""
-    },
-    {
-      "parentSelectors": [
-        "_root",
-        "pagination_link"
-      ],
       "type": "SelectorElementAttribute",
-      "multiple": false,
-      "id": "language_interface",
-      "selector": "input[name='hl']",
-      "extractAttribute": "value",
-      "delay": ""
-    },
-    {
       "parentSelectors": [
         "_root",
         "pagination_link"
       ],
-      "type": "SelectorHTML",
+      "selector": "input[name='num']",
       "multiple": false,
+      "extractAttribute": "value",
+      "delay": ""
+    },
+    {
+      "id": "language_interface",
+      "type": "SelectorElementAttribute",
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "selector": "input[name='hl']",
+      "multiple": false,
+      "extractAttribute": "value",
+      "delay": ""
+    },
+    {
       "id": "sorted_by_date",
+      "type": "SelectorHTML",
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
       "selector": "#tophf",
+      "multiple": false,
       "regex": "sbd:1",
       "delay": ""
     },
     {
+      "id": "user",
+      "type": "SelectorText",
       "parentSelectors": [
         "_root",
         "pagination_link"
       ],
-      "type": "SelectorText",
-      "multiple": false,
-      "id": "user",
       "selector": "div.gb_Db",
+      "multiple": false,
       "regex": "",
       "delay": ""
     },
     {
+      "id": "blocked_page",
+      "type": "SelectorElementAttribute",
       "parentSelectors": [
         "_root",
         "pagination_link"
       ],
-      "type": "SelectorElementAttribute",
-      "multiple": false,
-      "id": "blocked_page",
       "selector": "input[name='continue']",
+      "multiple": false,
       "extractAttribute": "value",
       "delay": ""
     },
     {
+      "id": "pagination_link",
+      "type": "SelectorLink",
       "parentSelectors": [
         "_root",
         "pagination_link"
       ],
-      "type": "SelectorLink",
-      "multiple": false,
-      "id": "pagination_link",
       "selector": "a#pnnext.pn",
+      "multiple": false,
       "delay": ""
     }
-  ],
-  "startUrl": ["https://www.google.com"]
+  ]
 }

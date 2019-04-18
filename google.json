@@ -177,42 +177,6 @@
       "delay": ""
     },
     {
-      "id": "location",
-      "type": "SelectorHTML",
-      "parentSelectors": [
-        "_root",
-        "pagination_link"
-      ],
-      "selector": "#xjsi",
-      "multiple": false,
-      "regex": "\\[(-|)[0-9]+\\.[0-9]+,(-|)[0-9]+\\.[0-9]+\\]",
-      "delay": ""
-    },
-    {
-      "id": "timestamp",
-      "type": "SelectorHTML",
-      "parentSelectors": [
-        "_root",
-        "pagination_link"
-      ],
-      "selector": "#xjsi",
-      "multiple": false,
-      "regex": "\\d{10}(?=\\\\\",null)",
-      "delay": ""
-    },
-    {
-      "id": "num_results",
-      "type": "SelectorElementAttribute",
-      "parentSelectors": [
-        "_root",
-        "pagination_link"
-      ],
-      "selector": "input[name='num']",
-      "multiple": false,
-      "extractAttribute": "value",
-      "delay": ""
-    },
-    {
       "id": "language_interface",
       "type": "SelectorElementAttribute",
       "parentSelectors": [
@@ -225,27 +189,15 @@
       "delay": ""
     },
     {
-      "id": "sorted_by_date",
-      "type": "SelectorHTML",
-      "parentSelectors": [
-        "_root",
-        "pagination_link"
-      ],
-      "selector": "#tophf",
-      "multiple": false,
-      "regex": "sbd:1",
-      "delay": ""
-    },
-    {
       "id": "user",
-      "type": "SelectorText",
+      "type": "SelectorElementAttribute",
       "parentSelectors": [
         "_root",
         "pagination_link"
       ],
-      "selector": "div.gb_Db",
+      "selector": "a.gb_Da",
       "multiple": false,
-      "regex": "",
+      "extractAttribute": "title",
       "delay": ""
     },
     {

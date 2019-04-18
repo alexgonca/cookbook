@@ -1,7 +1,9 @@
 {
   "_id": "google_search_venezuela",
   "startUrl": [
-    "https://www.google.com/"
+    "https://www.google.com/search?q=venezuela&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:1/6/2019,cd_max:1/6/2019&filter=0&biw=1396&bih=686",
+    "https://www.google.com/search?q=venezuela&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:1/7/2019,cd_max:1/7/2019&filter=0&biw=1396&bih=686",
+    "https://www.google.com/search?q=venezuela&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:1/24/2019,cd_max:1/24/2019&filter=0&biw=1396&bih=686"
   ],
   "selectors": [
     {

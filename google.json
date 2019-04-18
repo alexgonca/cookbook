@@ -1,9 +1,7 @@
 {
-  "_id": "google_search_venezuela",
+  "_id": "google_search",
   "startUrl": [
-    "https://www.google.com/search?q=venezuela&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:1/6/2019,cd_max:1/6/2019&filter=0&biw=1396&bih=686",
-    "https://www.google.com/search?q=venezuela&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:1/7/2019,cd_max:1/7/2019&filter=0&biw=1396&bih=686",
-    "https://www.google.com/search?q=venezuela&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:1/24/2019,cd_max:1/24/2019&filter=0&biw=1396&bih=686"
+    "https://www.google.com/"
   ],
   "selectors": [
     {
@@ -70,28 +68,6 @@
       "selector": "span.st",
       "multiple": false,
       "regex": "",
-      "delay": ""
-    },
-    {
-      "id": "missing",
-      "type": "SelectorText",
-      "parentSelectors": [
-        "result"
-      ],
-      "selector": "div._Tib",
-      "multiple": false,
-      "regex": "",
-      "delay": ""
-    },
-    {
-      "id": "rank",
-      "type": "SelectorHTML",
-      "parentSelectors": [
-        "result"
-      ],
-      "selector": "h3.r",
-      "multiple": false,
-      "regex": "(?:')([0-9]+)(?:')",
       "delay": ""
     },
     {
@@ -200,18 +176,6 @@
       "selector": "a.gb_Da",
       "multiple": false,
       "extractAttribute": "title",
-      "delay": ""
-    },
-    {
-      "id": "blocked_page",
-      "type": "SelectorElementAttribute",
-      "parentSelectors": [
-        "_root",
-        "pagination_link"
-      ],
-      "selector": "input[name='continue']",
-      "multiple": false,
-      "extractAttribute": "value",
       "delay": ""
     },
     {

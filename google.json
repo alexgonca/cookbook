@@ -185,7 +185,7 @@
         "_root",
         "pagination_link"
       ],
-      "selector": "a#pnnext.pn",
+      "selector": "a#pnnext",
       "multiple": false,
       "delay": ""
     }

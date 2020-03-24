@@ -1,0 +1,262 @@
+{
+  "_id": "google_panama_papers",
+  "startUrl": [
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:6/5/2016,cd_max:6/5/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:6/4/2016,cd_max:6/4/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:6/3/2016,cd_max:6/3/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:6/2/2016,cd_max:6/2/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:6/1/2016,cd_max:6/1/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/31/2016,cd_max:5/31/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/30/2016,cd_max:5/30/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/29/2016,cd_max:5/29/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/28/2016,cd_max:5/28/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/27/2016,cd_max:5/27/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/26/2016,cd_max:5/26/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/25/2016,cd_max:5/25/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/24/2016,cd_max:5/24/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/23/2016,cd_max:5/23/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/22/2016,cd_max:5/22/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/21/2016,cd_max:5/21/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/20/2016,cd_max:5/20/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/19/2016,cd_max:5/19/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/18/2016,cd_max:5/18/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/17/2016,cd_max:5/17/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/16/2016,cd_max:5/16/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/15/2016,cd_max:5/15/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/14/2016,cd_max:5/14/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/13/2016,cd_max:5/13/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/12/2016,cd_max:5/12/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/11/2016,cd_max:5/11/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/10/2016,cd_max:5/10/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/9/2016,cd_max:5/9/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/8/2016,cd_max:5/8/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/7/2016,cd_max:5/7/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/6/2016,cd_max:5/6/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/5/2016,cd_max:5/5/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/4/2016,cd_max:5/4/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/3/2016,cd_max:5/3/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/2/2016,cd_max:5/2/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:5/1/2016,cd_max:5/1/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/30/2016,cd_max:4/30/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/29/2016,cd_max:4/29/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/28/2016,cd_max:4/28/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/27/2016,cd_max:4/27/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/26/2016,cd_max:4/26/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/25/2016,cd_max:4/25/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/24/2016,cd_max:4/24/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/23/2016,cd_max:4/23/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/22/2016,cd_max:4/22/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/21/2016,cd_max:4/21/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/20/2016,cd_max:4/20/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/19/2016,cd_max:4/19/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/18/2016,cd_max:4/18/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/17/2016,cd_max:4/17/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/16/2016,cd_max:4/16/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/15/2016,cd_max:4/15/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/14/2016,cd_max:4/14/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/13/2016,cd_max:4/13/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/12/2016,cd_max:4/12/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/11/2016,cd_max:4/11/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/10/2016,cd_max:4/10/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/9/2016,cd_max:4/9/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/8/2016,cd_max:4/8/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/7/2016,cd_max:4/7/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/6/2016,cd_max:4/6/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/5/2016,cd_max:4/5/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/4/2016,cd_max:4/4/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/3/2016,cd_max:4/3/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/2/2016,cd_max:4/2/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:4/1/2016,cd_max:4/1/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:3/31/2016,cd_max:3/31/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:3/30/2016,cd_max:3/30/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:3/29/2016,cd_max:3/29/2016&filter=0&biw=1920&bih=979",
+    "https://www.google.com/search?q=%22panama+papers%22&lr=lang_en&hl=en&as_qdr=all&tbs=lr:lang_1en,cdr:1,cd_min:3/28/2016,cd_max:3/28/2016&filter=0&biw=1920&bih=979"
+  ],
+  "selectors": [
+    {
+      "id": "result",
+      "type": "SelectorElement",
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "selector": "div.rc",
+      "multiple": true,
+      "delay": ""
+    },
+    {
+      "id": "headline",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "result"
+      ],
+      "selector": "div.r > a",
+      "multiple": false,
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "id": "URL",
+      "type": "SelectorElementAttribute",
+      "parentSelectors": [
+        "result"
+      ],
+      "selector": "div.r > a",
+      "multiple": false,
+      "extractAttribute": "href",
+      "delay": ""
+    },
+    {
+      "id": "date",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "result"
+      ],
+      "selector": "span.f, div.slp.f",
+      "multiple": false,
+      "regex": ".+?((?= -)|$)",
+      "delay": ""
+    },
+    {
+      "id": "blurb",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "result"
+      ],
+      "selector": "span.st",
+      "multiple": false,
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "id": "blurb_html",
+      "type": "SelectorHTML",
+      "parentSelectors": [
+        "result"
+      ],
+      "selector": "span.st",
+      "multiple": false,
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "id": "current_page",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "selector": "td.YyVfkd",
+      "multiple": false,
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "id": "last_page",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "selector": "td:eq(-2)",
+      "multiple": false,
+      "regex": "",
+      "delay": ""
+    },
+    {
+      "id": "search_term",
+      "type": "SelectorElementAttribute",
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "selector": "input[name='q']",
+      "multiple": false,
+      "extractAttribute": "value",
+      "delay": ""
+    },
+    {
+      "id": "language_results",
+      "type": "SelectorElementAttribute",
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "selector": "input[name='lr']",
+      "multiple": false,
+      "extractAttribute": "value",
+      "delay": ""
+    },
+    {
+      "id": "country",
+      "type": "SelectorElementAttribute",
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "selector": "input[name='cr']",
+      "multiple": false,
+      "extractAttribute": "value",
+      "delay": ""
+    },
+    {
+      "id": "initial_date",
+      "type": "SelectorHTML",
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "selector": "#tophf",
+      "multiple": false,
+      "regex": "cd_min:[0-9]+\\/[0-9]+\\/[0-9]+",
+      "delay": ""
+    },
+    {
+      "id": "final_date",
+      "type": "SelectorHTML",
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "selector": "#tophf",
+      "multiple": false,
+      "regex": "cd_max:[0-9]+\\/[0-9]+\\/[0-9]+",
+      "delay": ""
+    },
+    {
+      "id": "language_interface",
+      "type": "SelectorElementAttribute",
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "selector": "input[name='hl']",
+      "multiple": false,
+      "extractAttribute": "value",
+      "delay": ""
+    },
+    {
+      "id": "user",
+      "type": "SelectorElementAttribute",
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "selector": "a.gb_Da",
+      "multiple": false,
+      "extractAttribute": "title",
+      "delay": ""
+    },
+    {
+      "id": "pagination_link",
+      "type": "SelectorLink",
+      "parentSelectors": [
+        "_root",
+        "pagination_link"
+      ],
+      "selector": "a#pnnext",
+      "multiple": false,
+      "delay": ""
+    }
+  ]
+}

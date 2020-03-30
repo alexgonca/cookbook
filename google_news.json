@@ -1,0 +1,85 @@
+{
+  "_id": "google_news",
+  "startUrl": [
+    "https://www.google.com/search?q=%22deepfake%22&biw=1149&bih=590&source=lnt&tbs=cdr%3A1%2Ccd_min%3A12%2F11%2F2017%2Ccd_max%3A3%2F10%2F2018&tbm=nws"
+  ],
+  "selectors": [
+    {
+      "id": "next_page",
+      "type": "SelectorLink",
+      "parentSelectors": [
+        "_root",
+        "next_page"
+      ],
+      "selector": "a#pnnext",
+      "multiple": false,
+      "delay": 0
+    },
+    {
+      "id": "Article",
+      "type": "SelectorElement",
+      "parentSelectors": [
+        "_root",
+        "next_page"
+      ],
+      "selector": "div.dbsr",
+      "multiple": true,
+      "delay": 0
+    },
+    {
+      "id": "headline",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "Article"
+      ],
+      "selector": "div.phYMDf",
+      "multiple": false,
+      "regex": "",
+      "delay": 0
+    },
+    {
+      "id": "URL",
+      "type": "SelectorElementAttribute",
+      "parentSelectors": [
+        "Article"
+      ],
+      "selector": "a",
+      "multiple": false,
+      "extractAttribute": "href",
+      "delay": 0
+    },
+    {
+      "id": "Date",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "Article"
+      ],
+      "selector": ".eNg7of span",
+      "multiple": false,
+      "regex": "",
+      "delay": 0
+    },
+    {
+      "id": "blurb",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "Article"
+      ],
+      "selector": "div.eYN3rb",
+      "multiple": false,
+      "regex": "",
+      "delay": 0
+    },
+    {
+      "id": "news_outlet",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "Article"
+      ],
+      "selector": "div.pDavDe",
+      "multiple": false,
+      "regex": "",
+      "delay": 0
+    }
+  ]
+}

@@ -1,193 +1,134 @@
 {
   "_id": "google_search",
   "startUrl": [
-    "https://www.google.com/"
+    "https://www.google.com/search?hl=en&lr=lang_en&filter=0&as_epq=frances+haugen&tbs=cdr:1,cd_min:10/20/2021,cd_max:10/20/2021",
+    "https://www.google.com/search?hl=en&lr=lang_en&filter=0&as_epq=frances+haugen&tbs=cdr:1,cd_min:10/21/2021,cd_max:10/21/2021",
+    "https://www.google.com/search?hl=en&lr=lang_en&filter=0&as_epq=frances+haugen&tbs=cdr:1,cd_min:10/22/2021,cd_max:10/22/2021"
   ],
   "selectors": [
     {
+      "clickElementSelector": "h3 > div",
+      "clickElementUniquenessType": "uniqueText",
+      "clickType": "clickMore",
+      "delay": 2000,
+      "discardInitialElements": "do-not-discard",
       "id": "result",
-      "type": "SelectorElement",
-      "parentSelectors": [
-        "_root",
-        "pagination_link"
-      ],
-      "selector": "div.rc",
       "multiple": true,
-      "delay": ""
+      "parentSelectors": [
+        "_root"
+      ],
+      "selector": "div.g > div",
+      "type": "SelectorElementClick"
     },
     {
       "id": "headline",
-      "type": "SelectorText",
+      "multiple": false,
       "parentSelectors": [
         "result"
       ],
-      "selector": "div.r > a",
-      "multiple": false,
       "regex": "",
-      "delay": ""
+      "selector": "h3",
+      "type": "SelectorText"
     },
     {
+      "extractAttribute": "href",
       "id": "URL",
-      "type": "SelectorElementAttribute",
+      "multiple": false,
       "parentSelectors": [
         "result"
       ],
-      "selector": "div.r > a",
-      "multiple": false,
-      "extractAttribute": "href",
-      "delay": ""
+      "selector": "a",
+      "type": "SelectorElementAttribute"
     },
     {
       "id": "date",
-      "type": "SelectorText",
+      "multiple": false,
       "parentSelectors": [
         "result"
       ],
-      "selector": "span.f, div.slp.f",
-      "multiple": false,
       "regex": ".+?((?= -)|$)",
-      "delay": ""
+      "selector": "div[style*=\"-webkit-line-clamp:2\"] > span > span",
+      "type": "SelectorText"
     },
     {
       "id": "blurb",
-      "type": "SelectorText",
+      "multiple": false,
       "parentSelectors": [
         "result"
       ],
-      "selector": "span.st",
-      "multiple": false,
       "regex": "",
-      "delay": ""
+      "selector": "div[style*=\"-webkit-line-clamp:2\"]",
+      "type": "SelectorText"
     },
     {
-      "id": "blurb_html",
-      "type": "SelectorHTML",
-      "parentSelectors": [
-        "result"
-      ],
-      "selector": "span.st",
-      "multiple": false,
-      "regex": "",
-      "delay": ""
-    },
-    {
-      "id": "current_page",
-      "type": "SelectorText",
-      "parentSelectors": [
-        "_root",
-        "pagination_link"
-      ],
-      "selector": "td.YyVfkd",
-      "multiple": false,
-      "regex": "",
-      "delay": ""
-    },
-    {
-      "id": "last_page",
-      "type": "SelectorText",
-      "parentSelectors": [
-        "_root",
-        "pagination_link"
-      ],
-      "selector": "td:eq(-2)",
-      "multiple": false,
-      "regex": "",
-      "delay": ""
-    },
-    {
+      "extractAttribute": "value",
       "id": "search_term",
-      "type": "SelectorElementAttribute",
+      "multiple": false,
       "parentSelectors": [
-        "_root",
-        "pagination_link"
+        "_root"
       ],
       "selector": "input[name='q']",
-      "multiple": false,
-      "extractAttribute": "value",
-      "delay": ""
+      "type": "SelectorElementAttribute"
     },
     {
+      "extractAttribute": "value",
       "id": "language_results",
-      "type": "SelectorElementAttribute",
+      "multiple": false,
       "parentSelectors": [
-        "_root",
-        "pagination_link"
+        "_root"
       ],
       "selector": "input[name='lr']",
-      "multiple": false,
-      "extractAttribute": "value",
-      "delay": ""
+      "type": "SelectorElementAttribute"
     },
     {
+      "extractAttribute": "value",
       "id": "country",
-      "type": "SelectorElementAttribute",
+      "multiple": false,
       "parentSelectors": [
-        "_root",
-        "pagination_link"
+        "_root"
       ],
       "selector": "input[name='cr']",
-      "multiple": false,
-      "extractAttribute": "value",
-      "delay": ""
+      "type": "SelectorElementAttribute"
     },
     {
       "id": "initial_date",
-      "type": "SelectorHTML",
-      "parentSelectors": [
-        "_root",
-        "pagination_link"
-      ],
-      "selector": "#tophf",
       "multiple": false,
+      "parentSelectors": [
+        "_root"
+      ],
       "regex": "cd_min:[0-9]+\\/[0-9]+\\/[0-9]+",
-      "delay": ""
+      "selector": "#tophf",
+      "type": "SelectorHTML"
     },
     {
       "id": "final_date",
-      "type": "SelectorHTML",
-      "parentSelectors": [
-        "_root",
-        "pagination_link"
-      ],
-      "selector": "#tophf",
       "multiple": false,
+      "parentSelectors": [
+        "_root"
+      ],
       "regex": "cd_max:[0-9]+\\/[0-9]+\\/[0-9]+",
-      "delay": ""
+      "selector": "#tophf",
+      "type": "SelectorHTML"
     },
     {
+      "extractAttribute": "value",
       "id": "language_interface",
-      "type": "SelectorElementAttribute",
+      "multiple": false,
       "parentSelectors": [
-        "_root",
-        "pagination_link"
+        "_root"
       ],
       "selector": "input[name='hl']",
-      "multiple": false,
-      "extractAttribute": "value",
-      "delay": ""
+      "type": "SelectorElementAttribute"
     },
     {
       "id": "user",
-      "type": "SelectorElementAttribute",
-      "parentSelectors": [
-        "_root",
-        "pagination_link"
-      ],
-      "selector": "a.gb_Da",
       "multiple": false,
-      "extractAttribute": "title",
-      "delay": ""
-    },
-    {
-      "id": "pagination_link",
-      "type": "SelectorLink",
       "parentSelectors": [
-        "_root",
-        "pagination_link"
+        "_root"
       ],
-      "selector": "a#pnnext",
-      "multiple": false,
-      "delay": ""
+      "regex": "",
+      "selector": "div.gb_wb",
+      "type": "SelectorText"
     }
   ]
 }

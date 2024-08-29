@@ -1,134 +1,151 @@
 {
   "_id": "google_search",
   "startUrl": [
-    "https://www.google.com/search?hl=en&lr=lang_en&filter=0&as_epq=frances+haugen&tbs=cdr:1,cd_min:10/20/2021,cd_max:10/20/2021",
-    "https://www.google.com/search?hl=en&lr=lang_en&filter=0&as_epq=frances+haugen&tbs=cdr:1,cd_min:10/21/2021,cd_max:10/21/2021",
-    "https://www.google.com/search?hl=en&lr=lang_en&filter=0&as_epq=frances+haugen&tbs=cdr:1,cd_min:10/22/2021,cd_max:10/22/2021"
+    "https://www.google.com/search?q=Ezra+Klein&sca_esv=ccb9ef2c67206885&sca_upv=1&sxsrf=ADLYWIIY2Azho7_0BiEFYtzWuKhLOp2yBw:1724940009844&ei=6X7QZq-eM7LOp84PqdXPuAU&start=0&sa=N&sstk=AagrsugetckiYc6blfce2ESzVhtVPuxObSDeyAdaPHipTi-CpFcnsKxH21wNAfQtP6AS_9pnkz16g_HgK0h4ca4pQ7tanpJVJLZ0yalSeIIrrhFTLoHXERioYhYJHVsTRV2OuEZbPqufcVLJO0svJa5cW0bwOXyLAj5gTWCqgMAKwPb6cMP6XL0jPBWZigCBWlBgn3UUqHNIZIdKBO7sBI9XEYo18KAglZgedTa9loHyK0z6cFXxzIiRluSVKI0&ved=2ahUKEwjvtq6krpqIAxUy58kDHanqE1c4ZBDy0wN6BAgFEAQ&biw=1920&bih=506&dpr=1"
   ],
   "selectors": [
     {
+      "id": "result",
+      "parentSelectors": [
+        "_root",
+        "next"
+      ],
+      "type": "SelectorElementClick",
       "clickElementSelector": "h3 > div",
       "clickElementUniquenessType": "uniqueText",
       "clickType": "clickMore",
       "delay": 2000,
       "discardInitialElements": "do-not-discard",
-      "id": "result",
       "multiple": true,
-      "parentSelectors": [
-        "_root"
-      ],
-      "selector": "div.g > div",
-      "type": "SelectorElementClick"
+      "selector": "div.g > div"
     },
     {
       "id": "headline",
-      "multiple": false,
       "parentSelectors": [
         "result"
       ],
-      "regex": "",
+      "type": "SelectorText",
       "selector": "h3",
-      "type": "SelectorText"
+      "multiple": false,
+      "regex": ""
     },
     {
-      "extractAttribute": "href",
       "id": "URL",
-      "multiple": false,
       "parentSelectors": [
         "result"
       ],
+      "type": "SelectorElementAttribute",
       "selector": "a",
-      "type": "SelectorElementAttribute"
+      "multiple": false,
+      "extractAttribute": "href"
     },
     {
       "id": "date",
-      "multiple": false,
       "parentSelectors": [
         "result"
       ],
-      "regex": ".+?((?= -)|$)",
+      "type": "SelectorText",
       "selector": "div[style*=\"-webkit-line-clamp:2\"] > span > span",
-      "type": "SelectorText"
+      "multiple": false,
+      "regex": ".+?((?= -)|$)"
     },
     {
       "id": "blurb",
-      "multiple": false,
       "parentSelectors": [
         "result"
       ],
-      "regex": "",
+      "type": "SelectorText",
       "selector": "div[style*=\"-webkit-line-clamp:2\"]",
-      "type": "SelectorText"
+      "multiple": false,
+      "regex": ""
     },
     {
-      "extractAttribute": "value",
       "id": "search_term",
-      "multiple": false,
       "parentSelectors": [
-        "_root"
+        "_root",
+        "next"
       ],
+      "type": "SelectorElementAttribute",
       "selector": "input[name='q']",
-      "type": "SelectorElementAttribute"
+      "multiple": false,
+      "extractAttribute": "value"
     },
     {
-      "extractAttribute": "value",
       "id": "language_results",
-      "multiple": false,
       "parentSelectors": [
-        "_root"
+        "_root",
+        "next"
       ],
+      "type": "SelectorElementAttribute",
       "selector": "input[name='lr']",
-      "type": "SelectorElementAttribute"
+      "multiple": false,
+      "extractAttribute": "value"
     },
     {
-      "extractAttribute": "value",
       "id": "country",
-      "multiple": false,
       "parentSelectors": [
-        "_root"
+        "_root",
+        "next"
       ],
+      "type": "SelectorElementAttribute",
       "selector": "input[name='cr']",
-      "type": "SelectorElementAttribute"
+      "multiple": false,
+      "extractAttribute": "value"
     },
     {
       "id": "initial_date",
-      "multiple": false,
       "parentSelectors": [
-        "_root"
+        "_root",
+        "next"
       ],
-      "regex": "cd_min:[0-9]+\\/[0-9]+\\/[0-9]+",
+      "type": "SelectorHTML",
       "selector": "#tophf",
-      "type": "SelectorHTML"
+      "multiple": false,
+      "regex": "cd_min:[0-9]+\\/[0-9]+\\/[0-9]+"
     },
     {
       "id": "final_date",
-      "multiple": false,
       "parentSelectors": [
-        "_root"
+        "_root",
+        "next"
       ],
-      "regex": "cd_max:[0-9]+\\/[0-9]+\\/[0-9]+",
+      "type": "SelectorHTML",
       "selector": "#tophf",
-      "type": "SelectorHTML"
+      "multiple": false,
+      "regex": "cd_max:[0-9]+\\/[0-9]+\\/[0-9]+"
     },
     {
-      "extractAttribute": "value",
       "id": "language_interface",
-      "multiple": false,
       "parentSelectors": [
-        "_root"
+        "_root",
+        "next"
       ],
+      "type": "SelectorElementAttribute",
       "selector": "input[name='hl']",
-      "type": "SelectorElementAttribute"
+      "multiple": false,
+      "extractAttribute": "value"
     },
     {
       "id": "user",
-      "multiple": false,
       "parentSelectors": [
-        "_root"
+        "_root",
+        "next"
       ],
-      "regex": "",
+      "type": "SelectorText",
       "selector": "div.gb_wb",
-      "type": "SelectorText"
+      "multiple": false,
+      "regex": ""
+    },
+    {
+      "id": "next",
+      "parentSelectors": [
+        "_root",
+        "next"
+      ],
+      "type": "SelectorLink",
+      "selector": "a#pnnext",
+      "multiple": false,
+      "linkType": "linkFromHref"
     }
   ]
 }

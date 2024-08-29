@@ -1,7 +1,7 @@
 {
   "_id": "google_search",
   "startUrl": [
-    "https://www.google.com/search?q=Ezra+Klein&sca_esv=ccb9ef2c67206885&sca_upv=1&sxsrf=ADLYWIIY2Azho7_0BiEFYtzWuKhLOp2yBw:1724940009844&ei=6X7QZq-eM7LOp84PqdXPuAU&start=0&sa=N&sstk=AagrsugetckiYc6blfce2ESzVhtVPuxObSDeyAdaPHipTi-CpFcnsKxH21wNAfQtP6AS_9pnkz16g_HgK0h4ca4pQ7tanpJVJLZ0yalSeIIrrhFTLoHXERioYhYJHVsTRV2OuEZbPqufcVLJO0svJa5cW0bwOXyLAj5gTWCqgMAKwPb6cMP6XL0jPBWZigCBWlBgn3UUqHNIZIdKBO7sBI9XEYo18KAglZgedTa9loHyK0z6cFXxzIiRluSVKI0&ved=2ahUKEwjvtq6krpqIAxUy58kDHanqE1c4ZBDy0wN6BAgFEAQ&biw=1920&bih=506&dpr=1"
+    "https://www.google.com/search?q=Ezra+Klein"
   ],
   "selectors": [
     {
